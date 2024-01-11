@@ -16,7 +16,12 @@ module.exports = {
         satoshi: [
           "Satoshi"
         ]
-      }
+      },
+      screens: {
+        'sm': { 'max': '480px' },
+        // => @media (max-width: 639px) { ... }
+
+      },
     },
   },
   plugins: [],

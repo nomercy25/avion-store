@@ -50,3 +50,11 @@
     transform: translateY(-10px) rotate(-45deg);
     transition: .3s all ease;
 }
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 56px;
+}
