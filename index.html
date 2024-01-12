@@ -17,7 +17,7 @@
         <div class="flex items-center justify-between">
             <a href="#"><img class="h-6" src="img/Search.svg" alt=""></a>
             <a class="text-[#22202e] text-2xl font-clash" href="#">Avion</a>
-            <div class="header-item flex gap-[18px]">
+            <div class="header-item flex gap-[18px] hover:bg-slate-500">
                 <a href="#"><img class="h-6 hidden lg:block" src="/img/Shopping--cart.svg" alt=""></a>
                 <a href="#"><img class="h-6 hidden lg:block" src="/img/User--avatar.svg" alt=""></a>
             </div>
@@ -93,7 +93,7 @@
             </div>
             <div class="hiddden lg:w-[520px] lg:h-[584px] bg-chair-img bg-auto"></div>
         </div>
-        <div class="advantages-heading px-[24px] font-clash mt-[72px] lg:mt-[80px] text-2xl">What makes our
+        <div class="advantages-heading sm:px-[24px] font-clash mt-[72px] lg:mt-[80px] text-2xl">What makes our
             brand
             different
         </div>
@@ -152,7 +152,7 @@
             class="btn mx-auto block w-full bg-[#f9f9f9] text-base font-satoshi hover:bg-black hover:text-white hover:rounded-lg lg:mt-[42px]">
             View collection</button>
         <div class="our-products sm:px-[24px] lg:mt-[120px] font-clash text-[32px]">Our popular products</div>
-        <div class="our-products-cards lg:flex flex-col lg:flex-row justify-between">
+        <div class="our-products-cards sm:px-[24px] sm:items-center lg:flex flex-col lg:flex-row justify-between">
             <div class="our-products-card font-clash lg:w-[630px] lg:mt-[25px]"><img class="img lg:h-[375px]"
                     src="img/Product Card/Large.png" alt="">
                 <div class="our-product-name lg:mt-[20px] text-xl">The Poplar suede sofa</div>
@@ -172,18 +172,41 @@
         <button
             class="btn mx-auto block w-full bg-[#f9f9f9] text-base font-satoshi hover:bg-black hover:text-white hover:rounded-lg lg:mt-[42px]">
             View collection</button>
-        <div class="promo-heading text-center lg:mt-[168px] font-clash sm:px-[24px] text-4xl">Join the club and get the
-            benefits
+        <div
+            class="container lg:mx-auto lg:mt-[48px] lg:w-[1440px] h-[481px] flex items-center justify-center bg-[#f9f9f9] sm:px-[24px]">
+            <div class="container bg-white flex flex-col justify-center items-center">
+                <div class="promo-heading text-center lg:mt-[168px] font-clash sm:px-[24px] text-4xl">Join the club and
+                    get
+                    the
+                    benefits
+                </div>
+                <div class="promo-subheading text-center lg:mt-[16px] font-satoshi text-base">Sign up for our newsletter
+                    and
+                    receive
+                    exclusive offers
+                    on new
+                    ranges, sales, pop up stores and more</div>
+                <div class="sign-area flex justify-center items-center">
+                    <form id="myForm" class="sign-item lg:mt-[72px] text-center">
+                        <input type="text" id="myInput" placeholder="your@email.com"
+                            class="border-[1px] px-[32px] border-[#f9f9f9] bg-[#f9f9f9] w-[354px] h-[56px]">
+                        <button
+                            class="input-btn bg-[#2A254B] w-[118px] h-[56px] lg:mb-[58px] text-white text-base font-satoshi">Sign
+                            up</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="promo-subheading text-center lg:mt-[16px] font-satoshi text-base">Sign up for our newsletter and
-            receive
-            exclusive offers
-            on new
-            ranges, sales, pop up stores and more</div>
-        <form id="myForm" class="sign-item lg:mt-[72px] text-center">
-            <input type="text" id="myInput" placeholder="your@email.com"
-                class="border-[1px] border-[#f9f9f9] w-[354px] h-[56px]">
-        </form>
+        <div class="about-us-container w-[1440px]">
+            <div class=" about-us-row flex flex-row">
+                <div class="about-us-item  lg:pt-[72px] lg:pr-[100px] lg:pb-[54px]">
+                    <div class="about-us-heading text-[#2A254B] font-clash text-2xl">From a studio in London to a global
+                        brand
+                        with
+                        over 400 outlets</div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="js/burger.js"></script>
