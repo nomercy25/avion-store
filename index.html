@@ -17,7 +17,7 @@
         <div class="flex items-center justify-between">
             <a href="#"><img class="h-6" src="img/Search.svg" alt=""></a>
             <a class="text-[#22202e] text-2xl font-clash" href="#">Avion</a>
-            <div class="header-item flex gap-[18px] hover:bg-slate-500">
+            <div class="header-item flex gap-[18px]">
                 <a href="#"><img class="h-6 hidden lg:block" src="/img/Shopping--cart.svg" alt=""></a>
                 <a href="#"><img class="h-6 hidden lg:block" src="/img/User--avatar.svg" alt=""></a>
             </div>
@@ -25,17 +25,26 @@
         <hr class="mt-[21px]">
         <nav class="mt-5">
             <ul class="lg:flex lg:gap-11 lg:justify-center font-satoshi hidden lg:block">
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Plant pots</a></li>
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Ceramics</a></li>
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Tables</a></li>
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Chairs</a></li>
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Crockery</a></li>
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Tableware</a></li>
-                <li><a class="hover:bg-gray-700 hover:text-white p-1 rounded-lg" href="#">Cutlery</a></li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg" href="#">Plant
+                        pots</a></li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg"
+                        href="#">Ceramics</a></li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg"
+                        href="#">Tables</a>
+                </li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg"
+                        href="#">Chairs</a>
+                </li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg"
+                        href="#">Crockery</a></li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg"
+                        href="#">Tableware</a></li>
+                <li><a class="hover:bg-gray-700 hover:animate-pulse  hover:text-white p-1 rounded-lg"
+                        href="#">Cutlery</a></li>
             </ul>
 
             <ul id="menu"
-                class="lg:hidden hidden absolute py-12 flex-col items-center left-6 text-xl right-6 top-26 bg-gray-700 rounded-lg">
+                class="lg:hidden z-20 hidden absolute py-12 flex-col sm:items-start sm:justify-center items-center left-6 text-xl right-6 top-26 bg-gray-700 rounded-lg">
                 <li class="mt-3"><a class="hover:bg-slate-50 hover:text-black rounded-lg p-1 text-white block"
                         href="#">Plant pots</a>
                 </li>
@@ -64,7 +73,7 @@
             </button>
         </nav>
     </header>
-    <main class="container lg:w-[1280px] h-[584px] mx-auto mt-[19px] lg:mt-[80px]">
+    <main class="container lg:w-[1280px] mx-auto mt-[19px] lg:mt-[80px]">
         <div class="blocks flex justify-center items-center flex-row flex-col lg:flex-row">
             <div class="block h-[502px] px-[24px]  lg:w-[760px] lg:h-[584px] bg-[#2A254B]">
                 <h2 class="text-white text-[32px] leading-[44px] font-clash mt-[40px]">
@@ -76,7 +85,7 @@
                     designs
                 </h2>
                 <button
-                    class="bg-[#666] text-white w-[170px] h-[56px] mt-[41px] text-base font-satoshi hover:bg-white hover:text-black hover:rounded-lg">View
+                    class="bg-[#666] animate-bounce text-white w-[170px] h-[56px] mt-[41px] text-base font-satoshi hover:bg-white hover:text-black">View
                     collection
                 </button>
                 <p class="block-subheading lg:w-[602px] text-white lg:mt-[196px] mt-[40px] font-satoshi text-lg">
@@ -126,7 +135,7 @@
         </div>
         <div class="product-heading sm:px-[24px] mt-[93px] lg:mt-[166px] font-clash text-[32px]">New ceramics</div>
         <div
-            class="product-cards mt-[19px] sm:px-[24px] lg:mt-[33px] flex flex-row flex-wrap lg:flex-row justify-between items-center">
+            class="product-cards mt-[19px] sm:px-[24px] lg:mt-[33px] sm:justify-center flex flex-row flex-wrap lg:flex-row justify-between items-center">
             <div class="product-card mx-auto mt-[20px] lg:w-1/4">
                 <img src="img/Photo.svg" alt="">
                 <div class="product-name mt-[24px] font-clash text-xl">The Dandy chair</div>
@@ -143,72 +152,193 @@
                 <div class="product-price mt-[8px] font-satoshi text-lg">£125</div>
             </div>
             <div class="product-card mx-auto mt-[20px] lg:w-1/4">
-                <img src="img/Photo3.svg" alt="">
+                <img class="sm:w-full" src="img/Photo3.svg" alt="">
                 <div class="product-name order-1 mt-[24px] font-clash text-xl">The Lucy Lamp</div>
                 <div class="product-price mt-[8px] font-satoshi text-lg">£399</div>
             </div>
         </div>
         <button
-            class="btn mx-auto block w-full bg-[#f9f9f9] text-base font-satoshi hover:bg-black hover:text-white hover:rounded-lg lg:mt-[42px]">
+            class="btn animate-bounce mx-auto block w-full sm:mt-[48px] sm:w-[342px] bg-[#f9f9f9] text-base font-satoshi hover:bg-black hover:text-white hover:rounded-lg lg:mt-[42px]">
             View collection</button>
-        <div class="our-products sm:px-[24px] lg:mt-[120px] font-clash text-[32px]">Our popular products</div>
-        <div class="our-products-cards sm:px-[24px] sm:items-center lg:flex flex-col lg:flex-row justify-between">
-            <div class="our-products-card font-clash lg:w-[630px] lg:mt-[25px]"><img class="img lg:h-[375px]"
+        <div class="our-products sm:px-[24px] sm:mt-[82px] lg:mt-[120px] font-clash text-[32px]">Our popular products
+        </div>
+        <div
+            class="our-products-cards sm:mt-[36px] sm:px-[24px] sm:items-center lg:flex flex-col lg:flex-row justify-between">
+            <div class="our-products-card font-clash lg:w-[630px] sm:hidden lg:mt-[25px]"><img class="img lg:h-[375px]"
                     src="img/Product Card/Large.png" alt="">
                 <div class="our-product-name lg:mt-[20px] text-xl">The Poplar suede sofa</div>
                 <div class="our-product-price lg:mt-[8px]">£980</div>
             </div>
             <div class="our-products-card font-clash lg:w-[305px] mx-auto lg:mt-[25px]"><img
-                    class="img object-fill h-[375px]" src="img/chair1.png" alt="">
-                <div class="our-product-name lg:mt-[20px] text-xl">The Poplar suede sofa</div>
-                <div class="our-product-price lg:mt-[8px]">£250</div>
+                    class="img h-[375px] sm:w-full" src="img/chair1.png" alt="">
+                <div class="our-product-name lg:mt-[20px] sm:mt-[24px] text-xl">The Poplar suede sofa</div>
+                <div class="our-product-price sm:mt-[8px] lg:mt-[8px]">£250</div>
             </div>
-            <div class="our-products-card font-clash lg:w-[305px] lg:mt-[25px]"><img class="img h-[375px]"
-                    src="img/chair2.png" alt="">
-                <div class="our-product-name lg:mt-[20px] text-xl">The Poplar suede sofa</div>
-                <div class="our-product-price lg:mt-[8px]">£250</div>
+            <div class="our-products-card font-clash lg:w-[305px] sm:mt-[24px] lg:mt-[25px]"><img
+                    class="img sm:w-full h-[375px]" src="img/chair2.png" alt="">
+                <div class="our-product-name lg:mt-[20px] sm:mt-[24px] text-xl">The Poplar suede sofa</div>
+                <div class="our-product-price sm:mt-[8px] lg:mt-[8px]">£250</div>
             </div>
         </div>
         <button
-            class="btn mx-auto block w-full bg-[#f9f9f9] text-base font-satoshi hover:bg-black hover:text-white hover:rounded-lg lg:mt-[42px]">
+            class="btn animate-bounce mx-auto block w-full bg-[#f9f9f9] text-base font-satoshi hover:bg-black hover:text-white hover:rounded-lg lg:mt-[42px] sm:mt-[38px] sm:w-[342px]">
             View collection</button>
         <div
-            class="container lg:mx-auto lg:mt-[48px] lg:w-[1440px] h-[481px] flex items-center justify-center bg-[#f9f9f9] sm:px-[24px]">
+            class="container lg:mx-auto lg:mt-[48px] lg:w-[1440px] h-[481px] flex items-center justify-center sm:px-[24px]">
             <div class="container bg-white flex flex-col justify-center items-center">
-                <div class="promo-heading text-center lg:mt-[168px] font-clash sm:px-[24px] text-4xl">Join the club and
+                <div
+                    class="promo-heading text-center lg:mt-[168px] font-clash  sm:px-[0px] sm:mt-[48px] sm:text-xl text-4xl">
+                    Join
+                    the club and
                     get
                     the
                     benefits
                 </div>
-                <div class="promo-subheading text-center lg:mt-[16px] font-satoshi text-base">Sign up for our newsletter
+                <div class="promo-subheading text-center sm:mt-[16px] lg:mt-[16px] sm:text-sm font-satoshi text-base">
+                    Sign up for
+                    our newsletter
                     and
                     receive
                     exclusive offers
                     on new
                     ranges, sales, pop up stores and more</div>
                 <div class="sign-area flex justify-center items-center">
-                    <form id="myForm" class="sign-item lg:mt-[72px] text-center">
+                    <form id="myForm" class="sign-item sm:mt-[64px] flex lg:mt-[72px] text-center">
                         <input type="text" id="myInput" placeholder="your@email.com"
-                            class="border-[1px] px-[32px] border-[#f9f9f9] bg-[#f9f9f9] w-[354px] h-[56px]">
+                            class="border-[1px] px-[32px] border-[#f9f9f9] bg-[#f9f9f9] sm:w-[244px] w-[354px] h-[56px]">
                         <button
-                            class="input-btn bg-[#2A254B] w-[118px] h-[56px] lg:mb-[58px] text-white text-base font-satoshi">Sign
+                            class="input-btn animate-pulse bg-[#2A254B] w-[118px] h-[56px] lg:mb-[58px] text-white text-base font-satoshi">Sign
                             up</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="about-us-container w-[1440px]">
-            <div class=" about-us-row flex flex-row">
-                <div class="about-us-item  lg:pt-[72px] lg:pr-[100px] lg:pb-[54px]">
-                    <div class="about-us-heading text-[#2A254B] font-clash text-2xl">From a studio in London to a global
-                        brand
-                        with
-                        over 400 outlets</div>
+        </div>
+    </main>
+    <div class="feautures-container mx-auto">
+        <div class="features-row flex sm:flex-col justify-between">
+            <div
+                class="left-features-item  sm:px-[24px] lg:ml-[84px]  leading-10 lg:w-[536px] lg:h-auto lg:mt-[72px] lg:mb-[54px]">
+                <div class="left-features-col flex flex-col">
+                    <div class="features-heading text-[#2A254B] font-clash sm:text-xl text-2xl">From a studio in London
+                        to a global brand with over 400 outlets</div>
+                    <div class="features-subheading sm:mt-[12px] lg:mt-[25px] sm:text-sm font-satoshi text-base">When we
+                        started
+                        Avion, the idea was
+                        simple. Make high
+                        quality
+                        furniture affordable and available for the mass market.<br><br>Handmade, and lovingly
+                        crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique
+                        become the hotbed
+                        for the London interior design community.</div>
+                    <div class="featerues-button">
+                        <button
+                            class="features-btn animate-bounce flex justify-center items-center sm:mt-[64px] sm:mb-[38px] sm:w-[342px] sm:text-base lg:mt-[196px] w-[150px] h-[56px] bg-[#f9f9f9] hover:bg-black hover:text-white hover:rounded-lg flex justify-start font-satoshi">Get
+                            in
+                            touch</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-features-item">
+                <img class="w-[720px]" src="img/features-photo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="w-full mx-auto bg-[#2A254B] sm:px-[24px] lg:px-[82px]">
+        <div class="footer-row flex sm:flex-col flex-row lg:pt-[58px] text-white">
+            <!-- first col-->
+            <div class="footer-col-item flex flex-col">
+                <div class="footer-row-item flex flex-row">
+                    <a href="#" class="footer-item-heading sm:mt-[40px] font-clash text-base">Menu</a>
+                </div>
+                <div class="footer-col-item flex flex-col">
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">New
+                        arrivals</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Best
+                        sellers</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Recently
+                        viewed</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Popular
+                        this week</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">All
+                        products</a>
+                </div>
+            </div>
+            <!-- second col-->
+            <div class="footer-col-item flex flex-col lg:ml-[109px]">
+                <div class="footer-row-item flex flex-row">
+                    <a href="#" class="footer-item-heading sm:mt-[40px] font-clash text-base">Categories</a>
+                </div>
+                <div class="footer-col-item flex flex-col">
+                    <a href="#"
+                        class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Crockery</a>
+                    <a href="#"
+                        class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Furniture</a>
+                    <a href="#"
+                        class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Homeware</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Plant
+                        pots</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Chairs</a>
+                    <a href="#"
+                        class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Crockery</a>
+                </div>
+            </div>
+            <!-- third col-->
+            <div class="footer-col-item flex flex-col lg:ml-[150px]">
+                <div class="footer-row-item flex flex-row">
+                    <a href="#" class="footer-item-heading sm:mt-[40px] font-clash text-base">Our company</a>
+                </div>
+                <div class="footer-col-item flex flex-col">
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">About
+                        us</a>
+                    <a href="#"
+                        class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Vacancies</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Contact
+                        us</a>
+                    <a href="#"
+                        class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Privacy</a>
+                    <a href="#" class="footer-item-subheading sm:mt-[12px] font-satoshi text-sm lg:mt-[12px]">Returns
+                        policy</a>
+                </div>
+            </div>
+            <!-- four col-->
+            <div class="footer-col-item flex flex-col lg:ml-[109px]">
+                <div class="footer-row-item flex flex-row">
+                    <a href="#" class="footer-item-heading font-clash sm:mt-[40px] sm:mb-[16px]  text-base">Join our
+                        mailing list</a>
+                </div>
+                <div class="footer-col-item flex flex-col">
+                    <form id="myForm" class="sign-item flex lg:mt-[16px] sm:mb-[16px] text-center">
+                        <input type="text" id="myInput" placeholder="your@email.com"
+                            class="border-[1px] px-[32px] border-[#4E4D93] bg-[#4E4D93] sm:text-white sm:w-[224px] w-[509px] h-[56px] text-white">
+                        <button
+                            class="input-btn animate-pulse bg-white w-[118px] h-[56px] lg:mb-[58px] text-black text-base font-satoshi">Sign
+                            up</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </main>
-
+        <hr class="lg:mt-[48px]">
+        <div
+            class="footer-contact-row flex sm:justify-center sm:mt-[20px] sm:pb-[20px] flex-row items-center justify-between lg:mt-[24px] lg:pb-[22px]">
+            <div class="contact-row-item text-white font-satoshi text-sm">
+                <p>Copyright 2022 Avion LTD</p>
+            </div>
+            <div class="social-item sm:hidden flex items-center">
+                <a href="#" class="lg:mx-[24px] hover:animate-spin animate-bounce"><img src="img/linkedin.svg"
+                        alt=""></a>
+                <a href="#" class="lg:mx-[24px] hover:animate-spin animate-bounce"><img src="img/facebook.svg"
+                        alt=""></a>
+                <a href="#" class="lg:mx-[24px] hover:animate-spin animate-bounce"><img src="img/instagram.svg"
+                        alt=""></a>
+                <a href="#" class="lg:mx-[24px] hover:animate-spin animate-bounce"><img src="img/skype.svg" alt=""></a>
+                <a href="#" class="lg:mx-[24px] hover:animate-spin animate-bounce"><img src="img/twitter.svg"
+                        alt=""></a>
+                <a href="#" class="lg:ml-[24px] hover:animate-spin animate-bounce"><img src="img/pinterest.svg"
+                        alt=""></a>
+            </div>
+        </div>
+    </footer>
     <script src="js/burger.js"></script>
 </body>
 
