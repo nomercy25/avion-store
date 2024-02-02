@@ -1,12 +1,7 @@
-function burgerMenu() {
-    const menu = document.querySelector('#menu')
-    const burger = document.querySelector('.burger')
+let menuBtn = document.querySelector(".menu-btn");
+let menu = document.querySelector(".menu");
 
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('active')
-        menu.classList.toggle('hidden')
-        menu.classList.toggle('flex')
-    })
-}
-
-burgerMenu();
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("active");
+  menu.classList.toggle("active");
+});

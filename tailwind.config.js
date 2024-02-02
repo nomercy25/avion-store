@@ -1,29 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./**/*.html'],
+  content: ["./**/*.html"],
   theme: {
     extend: {
       backgroundImage: {
-        'chair-img': "url('../img/main-chair.png')",
+        "chair-img": "url('../img/main-chair.png')",
       },
       fontFamily: {
-        sans: [
-          "Inter",
-        ],
-        clash: [
-          "Clash Display"
-        ],
-        satoshi: [
-          "Satoshi"
-        ]
+        sans: ["Inter"],
+        clash: ["Clash Display"],
+        satoshi: ["Satoshi"],
       },
-      screens: {
-        'sm': { 'max': '480px' },
-        // => @media (max-width: 639px) { ... }
-
+      container: {
+        center: true,
+        screens: {
+          md: "1024px",
+          lg: "1280px",
+          xxl: "1386px",
+        },
       },
     },
   },
   plugins: [],
-}
-
+};

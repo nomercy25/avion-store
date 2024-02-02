@@ -2,59 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-.burger {
-    height: 20px;
-    top: 30px;
-    right: 15px;
-    position: absolute;
-    width: 30px;
+/* Гамбургер иконка */
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
-.burger-line {
-    display: flex;
-    width: 30px;
-    height: 2px;
-    background: #000;
+.menu-btn span {
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222222;
+  transition: all 0.5s;
 }
 
-.top-line {
-    position: absolute;
-    top: 0;
-    left: 0;
+.menu-btn span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+  top: calc(50% + 5px);
 }
 
-.mid-line {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+  background: #fff;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+  background: #fff;
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+  background: #fff;
 }
 
-.bottom-line {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+/* Меню, которое будет появляться */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background: #2a254b;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
 }
 
-.burger.active>.top-line {
-    transform: translateY(8px) rotate(45deg);
-    transition: .3s all ease;
+.menu.active {
+  transform: translateX(0);
 }
 
-.burger.active>.mid-line {
-    opacity: 0;
-    transition: .3s all ease;
-}
-
-.burger.active>.bottom-line {
-    transform: translateY(-10px) rotate(-45deg);
-    transition: .3s all ease;
-}
-
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 56px;
+.menu li {
+  list-style-type: none;
+  color: #fff;
+  font-size: 24px;
 }
