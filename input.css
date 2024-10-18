@@ -11,6 +11,9 @@
   overflow: hidden;
 }
 
+
+
+
 .menu-btn span {
   width: 30px;
   height: 2px;
@@ -25,6 +28,7 @@
 .menu-btn span:nth-of-type(2) {
   top: calc(50% - 5px);
 }
+
 .menu-btn span:nth-of-type(3) {
   top: calc(50% + 5px);
 }
@@ -34,11 +38,13 @@
   display: none;
   background: #fff;
 }
+
 .menu-btn.active span:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
   background: #fff;
 }
+
 .menu-btn.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
@@ -83,7 +89,7 @@
   z-index: 1000;
 }
 
-  /* Стили для притемненного body */
+/* Стили для притемненного body */
 .overlay {
   display: none;
   position: fixed;
@@ -93,13 +99,15 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  }
+}
 
-  #value {
-    font-size: 24px;
-  }
-  .plus, .minus {
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
-  }
+#value {
+  font-size: 24px;
+}
+
+.plus,
+.minus {
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+}

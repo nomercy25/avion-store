@@ -831,6 +831,10 @@ video {
   width: 24px;
 }
 
+.w-\[264px\] {
+  width: 264px;
+}
+
 .w-\[3\/6\] {
   width: 3/6;
 }
@@ -1244,7 +1248,8 @@ video {
   font-size: 24px;
 }
 
-.plus, .minus {
+.plus,
+.minus {
   font-size: 20px;
   padding: 10px;
   margin: 5px;
@@ -1315,6 +1320,10 @@ video {
 
   .lg\:mt-\[120px\] {
     margin-top: 120px;
+  }
+
+  .lg\:mt-\[22px\] {
+    margin-top: 22px;
   }
 
   .lg\:mt-\[50px\] {

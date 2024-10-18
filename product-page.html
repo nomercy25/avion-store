@@ -1,211 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link
-			href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap"
-			rel="stylesheet"
-		/>
-		<title>Avion</title>
-	</head>
-	<body>
-		<div
-			class="header-delivery-wrapper bg-[#2A254B] h-[50px] w-full text-white font-satoshi"
-		>
-			<div
-				class="header-delivery-info_row flex justify-between pt-[11px]"
-				onclick="this.parentElement.style.display='none';"
-			>
-				<h6 class="delivery-heading mx-auto text-[14px]">
-					Free delivery on all orders over £50 with code easter checkout
-				</h6>
-				<button
-					class="header-delivery-close pb-[20px] pr-[16px] w-[24px] h-[24px]"
-					href="#"
-				>
-					X
-				</button>
-			</div>
-		</div>
-		<div class="container">
-			<div class="nav-row flex justify-between items-center mt-[25px]">
-				<a href="/index.html" class="nav-logo font-clash text-[24px]">Avion</a>
-				<nav>
-					<ul class="flex text-[#726E8D]">
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px]"
-								>Plant pots</a
-							>
-						</li>
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]"
-								>Ceramics</a
-							>
-						</li>
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]"
-								>Tables</a
-							>
-						</li>
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]"
-								>Chairs</a
-							>
-						</li>
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]"
-								>Crockery</a
-							>
-						</li>
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]"
-								>Tableware</a
-							>
-						</li>
-						<li>
-							<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]"
-								>Cutlery</a
-							>
-						</li>
-					</ul>
-				</nav>
-				<div class="nav-item flex">
-					<a href="#" id="openPopup"
-						><img class="w-[24px] h-[24px]" src="img/Search.svg" alt=""
-					/></a>
-					<a href="/shop-basket.html" class="cart ml-[16px]">
-						<img
-							class="w-[24px] h-[24px]"
-							src="img/Shopping--cart.svg"
-							alt=""
-						/>
-					</a>
-					<a href="#" class="search ml-[16px]">
-						<img class="w-[24px] h-[24px]" src="img/User--avatar.svg" alt="" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="product-row pt-[29px] flex justify-between">
-			<div class="product-left-item w-1/2">
-				<img src="img/Image Left.png" alt="" />
-			</div>
-			<div class="product-right-item w-1/2 flex flex-col">
-				<div class="right-item-heading mt-[91px] font-clash text-[36px]">
-					The Dandy Chair
-				</div>
-				<div class="right-item-price font-satoshi text-[24px] mt-[13px]">
-					£250
-				</div>
-				<div class="description-heading mt-[54px] font-clash text-[16px]">
-					Description
-				</div>
-				<div
-					class="description-subheading mt-[16px] font-satoshi text-[16px] text-[#505977]"
-				>
-					A timeless design, with premium materials features as one of our most
-					popular and iconic pieces. The dandy chair is perfect for any stylish
-					living space with beech legs and lambskin leather upholstery.
-				</div>
-				<div class="description-list font-satoshi text-[16px] text-[#505977]">
-					<ul>
-						<li class="list-disc list-inside mt-[20px]">
-							Premium material
-						</li>
-						<li class="list-disc list-inside mt-[10px]">
-							Handmade upholstery
-						</li>
-						<li class="list-disc list-inside mt-[10px]">
-							Quality timeless classic
-						</li>
-					</ul>
-				</div>
-				<div class="dimensions-heading font-clash text-[16px] mt-[50px]">
-					Dimensions
-				</div>
-				<div class="dimensions-block max-w-[241px] text-[#505977] mt-[28px]">
-					<div class="dimensions-row flex justify-between">
-						<div class="dimensions-col">
-							<div class="dimensions-name text-[14px] font-clash">Height</div>
-							<div class="dimensions-value text-[16px] font-clash mt-[12px]">
-								110cm
-							</div>
-						</div>
-						<div class="dimensions-col">
-							<div class="dimensions-name text-[14px] font-clash">Width</div>
-							<div class="dimensions-value text-[16px] font-clash mt-[12px]">
-								75cm
-							</div>
-						</div>
-						<div class="dimensions-col">
-							<div class="dimensions-name text-[14px] font-clash">Depth</div>
-							<div class="dimensions-value text-[16px] font-clash mt-[12px]">
-								50cm
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="amount-block flex justify-between mt-[34px]">
-					<div
-						class="amount-heading flex items-center font-clash text-[16px] text-[#2A254B]"
-					>
-						Amount:
-						<div
-							class="calc-btn ml-[22px] flex items-center justify-center w-[122px] h-[46px] bg-[#F9F9F9]"
-						>
-							<button
-								class="minus text-[24px] text-[#CAC6DA]"
-								onclick="subtract()"
-							>
-								-
-							</button>
-							<div id="value">0</div>
-							<button class="plus text-[24px] text-[#CAC6DA]" onclick="add()">
-								+
-							</button>
-						</div>
-					</div>
-					<button
-						class="font-clash mr-[100px] w-[143px] h-[56px] bg-[#4E4D93] text-white"
-					>
-						Add to cart
-					</button>
-				</div>
-			</div>
-		</div>
 
-		<!--popup-->
-		<!-- Всплывающее окно -->
-		<div class="popup px-[24px] font-clash" id="popup">
-			<div class="popup-center mt-[150px] flex justify-center items-center">
-				<input
-					type="text"
-					class="outline w-1/2 h-[40px] px-[15px] rounded-md"
-					id="inputField"
-				/>
-				<button
-					class="bg-[#333] h-[40px] w-[100px] ml-[5px] rounded-md text-white"
-				>
-					Search
-				</button>
-			</div>
-			<button
-				class="text-[30px] font-clash absolute right-[15px] top-0"
-				onclick="closePopup()"
-			>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet" />
+	<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400&display=swap" rel="stylesheet" />
+	<title>Avion</title>
+</head>
+
+<body>
+	<div class="header-delivery-wrapper bg-[#2A254B] h-[50px] w-full text-white font-satoshi">
+		<div class="header-delivery-info_row flex justify-between pt-[11px]"
+			onclick="this.parentElement.style.display='none';">
+			<h6 class="delivery-heading mx-auto text-[14px]">
+				Free delivery on all orders over £50 with code easter checkout
+			</h6>
+			<button class="header-delivery-close pb-[20px] pr-[16px] w-[24px] h-[24px]" href="#">
 				X
 			</button>
 		</div>
-		<!-- Притемненный overlay -->
-		<div class="overlay" id="overlay"></div>
-		<script src="js/burger.js"></script>
-		<script src="js/popup.js"></script>
-		<script src="js/calc.js"></script>
-	</body>
+	</div>
+	<div class="container">
+		<div class="nav-row flex justify-between items-center mt-[25px]">
+			<a href="/index.html" class="nav-logo font-clash text-[24px]">Avion</a>
+			<nav class="hidden lg:flex">
+				<ul class="flex text-[#726E8D]">
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px]">Plant pots</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]">Ceramics</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]">Tables</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]">Chairs</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]">Crockery</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]">Tableware</a>
+					</li>
+					<li>
+						<a href="#" class="nav-link font-satoshi text-[16px] ml-[44px]">Cutlery</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="nav-item flex">
+				<a href="#" id="openPopup"><img class="w-[24px] h-[24px]" src="img/Search.svg" alt="" /></a>
+				<a href="/shop-basket.html" class="cart ml-[16px]">
+					<img class="w-[24px] h-[24px]" src="img/Shopping--cart.svg" alt="" />
+				</a>
+				<a href="#" class="search ml-[16px]">
+					<img class="w-[24px] h-[24px]" src="img/User--avatar.svg" alt="" />
+				</a>
+
+			</div>
+		</div>
+	</div>
+	<div class="product-row pt-[29px] flex justify-between">
+		<div class="product-left-item w-1/2">
+			<img src="img/Image Left.png" alt="" />
+		</div>
+		<div class="product-right-item w-1/2 flex flex-col">
+			<div class="right-item-heading mt-[91px] font-clash text-[36px]">
+				The Dandy Chair
+			</div>
+			<div class="right-item-price font-satoshi text-[24px] mt-[13px]">
+				£250
+			</div>
+			<div class="description-heading mt-[54px] font-clash text-[16px]">
+				Description
+			</div>
+			<div class="description-subheading mt-[16px] font-satoshi text-[16px] text-[#505977]">
+				A timeless design, with premium materials features as one of our most
+				popular and iconic pieces. The dandy chair is perfect for any stylish
+				living space with beech legs and lambskin leather upholstery.
+			</div>
+			<div class="description-list font-satoshi text-[16px] text-[#505977]">
+				<ul>
+					<li class="list-disc list-inside mt-[20px]">
+						Premium material
+					</li>
+					<li class="list-disc list-inside mt-[10px]">
+						Handmade upholstery
+					</li>
+					<li class="list-disc list-inside mt-[10px]">
+						Quality timeless classic
+					</li>
+				</ul>
+			</div>
+			<div class="dimensions-heading font-clash text-[16px] mt-[50px]">
+				Dimensions
+			</div>
+			<div class="dimensions-block max-w-[241px] text-[#505977] mt-[28px]">
+				<div class="dimensions-row flex justify-between">
+					<div class="dimensions-col">
+						<div class="dimensions-name text-[14px] font-clash">Height</div>
+						<div class="dimensions-value text-[16px] font-clash mt-[12px]">
+							110cm
+						</div>
+					</div>
+					<div class="dimensions-col">
+						<div class="dimensions-name text-[14px] font-clash">Width</div>
+						<div class="dimensions-value text-[16px] font-clash mt-[12px]">
+							75cm
+						</div>
+					</div>
+					<div class="dimensions-col">
+						<div class="dimensions-name text-[14px] font-clash">Depth</div>
+						<div class="dimensions-value text-[16px] font-clash mt-[12px]">
+							50cm
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="amount-block flex justify-between mt-[34px]">
+				<div class="amount-heading flex items-center font-clash text-[16px] text-[#2A254B]">
+					Amount:
+					<div class="calc-btn ml-[22px] flex items-center justify-center w-[122px] h-[46px] bg-[#F9F9F9]">
+						<button class="minus text-[24px] text-[#CAC6DA]" onclick="subtract()">
+							-
+						</button>
+						<div id="value">0</div>
+						<button class="plus text-[24px] text-[#CAC6DA]" onclick="add()">
+							+
+						</button>
+					</div>
+				</div>
+				<button class="font-clash mr-[100px] w-[143px] h-[56px] bg-[#4E4D93] text-white">
+					Add to cart
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="product-container container max-w-[1280px] lg:mt-[80px]">
+		<div class="product-heading font-clash text-[32px]">You might also like</div>
+		<div class="fixed-product-cards-block max-w-full lg:max-w-[1280px] sm:mx-0">
+			<div class="product-cards w-full px-[24px] lg:px-0 mt-[33px] flex justify-between flex-wrap lg:flex-nowrap">
+				<a class="product-card w-[3/6] lg:max-w-72" href="/product-page.html">
+					<div class="product-img ">
+						<img class="w-[150px] lg:w-72" src="img/Photo.svg" alt="" />
+					</div>
+					<div class="product-name mt-[24px] font-clash text-[20px]">
+						The Dandy chair
+					</div>
+					<div class="product-price mt-[8px] font-satoshi text-[18px]">
+						£250
+					</div>
+				</a>
+				<a class="product-card w-[3/6] max-w-[305px] lg:max-w-72" href="#">
+					<div class="product-img ">
+						<img class="w-[150px] lg:w-72" src="img/Photo1.svg" alt="" />
+					</div>
+					<div class="product-name mt-[24px] font-clash text-[20px]">
+						Rustic Vase Set
+					</div>
+					<div class="product-price mt-[8px] font-satoshi text-[18px]">
+						£155
+					</div>
+				</a>
+				<a class="product-card mt-[20px] sm:mt-0 lg:mt-0 w-[3/6] lg:max-w-72" href="#">
+					<div class="product-img ">
+						<img class="w-[150px] lg:w-72" src="img/Photo2.svg" alt="" />
+					</div>
+					<div class="product-name mt-[24px] font-clash text-[20px]">
+						The Silky Vase
+					</div>
+					<div class="product-price mt-[8px] font-satoshi text-[18px]">
+						£125
+					</div>
+				</a>
+				<a class="product-card mt-[20px] sm:mt-0 w-[3/6] lg:max-w-72 lg:mt-0" href="#">
+					<div class="product-img ">
+						<img class="w-[150px] lg:w-72" src="img/Photo3.svg" alt="" />
+					</div>
+					<div class="product-name mt-[24px] font-clash text-[20px]">
+						The Lucy Lamp
+					</div>
+					<div class="product-price mt-[8px] font-satoshi text-[18px]">
+						£399
+					</div>
+				</a>
+			</div>
+		</div>
+		<button
+			class="product-btn w-[342px] px-[24px] lg:px-0 lg:max-w-[170px] h-[56px] bg-[#f9f9f9]/100 mt-[45px] block mx-auto font-satoshi text-[16px]">
+			View collection
+		</button>
+		<div class="advantages-heading lg:mt-[120px] font-clash text-[24px] px-[24px] lg:px-[0px]">
+			What makes our brand different
+		</div>
+		<div
+			class="advantages-blocks px-[24px] lg:px-[0px] mt-[51px] flex flex-col justify-between lg:flex-row lg:items-center">
+			<div class="advantages-block w-full lg:max-w-64">
+				<div class="advantages-logo">
+					<img src="img/Delivery.svg" alt="" />
+				</div>
+				<div class="advantages-heading mt-[16px] font-clash text-[20px]">
+					Next day as standard
+				</div>
+				<div class="advantages-subheading mt-[12px] text-[16px] font-satoshi">
+					Order before 3pm and get your order the next day as standard
+				</div>
+			</div>
+			<div class="advantages-block mt-[36px] lg:max-w-64">
+				<div class="advantages-logo">
+					<img src="img/Checkmark--outline.svg" alt="" />
+				</div>
+				<div class="advantages-heading mt-[16px] font-clash text-[20px]">
+					Made by true artisans
+				</div>
+				<div class="advantages-subheading mt-[12px] text-[16px] font-satoshi">
+					Handmade crafted goods made with real passion and craftmanship
+				</div>
+			</div>
+			<div class="advantages-block mt-[36px] lg:max-w-64">
+				<div class="advantages-logo">
+					<img src="img/Purchase.svg" alt="" />
+				</div>
+				<div class="advantages-heading mt-[16px] font-clash text-[20px]">
+					Unbeatable prices
+				</div>
+				<div class="advantages-subheading mt-[12px] text-[16px] font-satoshi">
+					For our materials and quality you won’t find better prices anywhere
+				</div>
+			</div>
+			<div class="advantages-block mt-[36px] lg:max-w-64 w-full">
+				<div class="advantages-logo">
+					<img src="img/Sprout.svg" alt="" />
+				</div>
+				<div class="advantages-heading mt-[16px] font-clash text-[20px]">
+					Recycled packaging
+				</div>
+				<div class="advantages-subheading mt-[12px] text-[16px] font-satoshi">
+					We use 100% recycled packaging to ensure our footprint is manageable
+				</div>
+			</div>
+		</div>
+		<div class="signup-wrapper mx-auto mt-[86px] max-w-full">
+			<div class="container bg-[#f9f9f9] lg:pt-[52px] lg:pr-[74px] lg:pb-[65px] lg:pl-[93px] max-w-[1280px] mx-auto">
+				<div class="container px-[24px] lg:pt-[68px] max-w-[1280px] mx-auto bg-[#fff]">
+					<div class="promo-heading text-center font-clash text-[20px] lg:text-[36px]">
+						Join the club and get the benefits
+					</div>
+					<div class="promo-subheading text-center mt-[16px] font-satoshi text-[14px] lg:text-[16px]">
+						Sign up for our newsletter and receive exclusive offers on new ranges,
+						sales, pop up stores and more
+					</div>
+					<div class="sign-area flex justify-center items-center">
+						<form id="myForm" class="sign-item flex mt-[64px] text-center">
+							<input type="text" id="myInput" placeholder="your@email.com"
+								class="border-[1px] px-[32px] border-[#f9f9f9] bg-[#f9f9f9] font-satoshi lg:w-[354px] w-[224px] h-[56px]" />
+							<button
+								class="input-btn animate-pulse bg-[#2A254B] w-[118px] h-[56px] mb-[54px] text-white text-base font-satoshi">
+								Sign up
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="w-full bg-[#2A254B] px-[24px] pt-[40px] lg:pt-54px">
+		<div class="container max-w-[1280px]">
+			<div class="footer-row flex flex-col lg:flex-row lg:justify-between text-white">
+				<!-- first col-->
+				<div class="footer-col-item flex flex-col">
+					<div class="footer-row-item flex flex-row">
+						<a href="#" class="footer-item-heading  font-clash text-[36px]">Avion</a>
+					</div>
+					<div class="footer-col-item flex flex-col">
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">21 New York Street</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">New York City</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Unitied States of America</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">432 34</a>
+					</div>
+				</div>
+				<!-- second col-->
+				<div class="footer-col-item mt-[40px] lg:mt-0 flex flex-col">
+					<div class="footer-row-item flex flex-row">
+						<a href="#" class="footer-item-heading font-clash text-base">Social links</a>
+					</div>
+					<div class="footer-col-item flex flex-col">
+						<div class="social-item hidden lg:flex lg:mt-[22px]  w-[264px] justify-between items-center">
+							<a href="#" class="hover:animate-spin animate-bounce"><img class="w-[24px] h-[24px]"
+									src="img/linkedin.svg" alt="" /></a>
+
+							<a href="#" class="hover:animate-spin animate-bounce"><img class="w-[24px] h-[24px]"
+									src="img/facebook.svg" alt="" /></a>
+
+							<a href="#" class="hover:animate-spin animate-bounce"><img class="w-[24px] h-[24px]"
+									src="img/instagram.svg" alt="" /></a>
+
+							<a href="#" class="hover:animate-spin animate-bounce"><img class="w-[24px] h-[24px]" src="img/skype.svg"
+									alt="" /></a>
+							<a href="#" class="hover:animate-spin animate-bounce"><img class="w-[24px] h-[24px]" src="img/twitter.svg"
+									alt="" /></a>
+
+							<a href="#" class="hover:animate-spin animate-bounce"><img class="w-[24px] h-[24px]"
+									src="img/pinterest.svg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+				<!-- third col-->
+				<div class="footer-col-item mt-[40px] lg:mt-0 flex flex-col">
+					<div class="footer-row-item flex flex-row">
+						<a href="#" class="footer-item-heading font-clash text-base">Menu</a>
+					</div>
+					<div class="footer-col-item flex flex-col">
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">New arrivals</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Best sellers</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Recently viewed</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Popular this week</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">All products</a>
+					</div>
+				</div>
+				<!-- four col-->
+				<div class="footer-col-item mt-[40px] lg:mt-0 flex flex-col">
+					<div class="footer-row-item flex flex-row">
+						<a href="#" class="footer-item-heading font-clash text-base">Categories</a>
+					</div>
+					<div class="footer-col-item flex flex-col">
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Crockery</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Furniture</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Homeware</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Plant pots</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Chairs</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Crockery</a>
+					</div>
+				</div>
+				<!-- five col-->
+				<div class="footer-col-item mt-[40px] lg:mt-0 flex flex-col">
+					<div class="footer-row-item flex flex-row">
+						<a href="#" class="footer-item-heading font-clash text-base">Our company</a>
+					</div>
+					<div class="footer-col-item flex flex-col">
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">About us</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Vacancies</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Contact us</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Privacy</a>
+						<a href="#" class="footer-item-subheading font-satoshi text-sm mt-[12px]">Returns policy</a>
+					</div>
+				</div>
+
+			</div>
+			<hr class="mt-[16px]" />
+			<div class="footer-contact-row flex flex-row items-center justify-center lg:justify-between mt-[20px] pb-[20px]">
+				<div class="contact-row-item text-white font-satoshi text-[14px] text-center">
+					<p>Copyright 2022 Avion LTD</p>
+				</div>
+			</div>
+	</footer>
+
+	<!--popup-->
+	<!-- Всплывающее окно -->
+	<div class="popup px-[24px] font-clash" id="popup">
+		<div class="popup-center mt-[150px] flex justify-center items-center">
+			<input type="text" class="outline w-1/2 h-[40px] px-[15px] rounded-md" id="inputField" />
+			<button class="bg-[#333] h-[40px] w-[100px] ml-[5px] rounded-md text-white">
+				Search
+			</button>
+		</div>
+		<button class="text-[30px] font-clash absolute right-[15px] top-0" onclick="closePopup()">
+			X
+		</button>
+	</div>
+	<!-- Притемненный overlay -->
+	<div class="overlay" id="overlay"></div>
+	<script src="js/burger.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/calc.js"></script>
+</body>
+
 </html>
